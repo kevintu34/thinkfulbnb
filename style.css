@@ -1,0 +1,215 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+main img {
+  width: 100%;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+  padding: 20px 20px 1px 20px;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 72px;
+  color: #fff;
+}
+
+header nav ul {
+  display: flex ;
+  justify-content: center;
+  padding-left: 0px;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  margin: 10px;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* -------  Search Form ------- */
+form {
+  border: 2px solid #ff385c;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-weight: bold;
+  margin-top: 5px
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  margin-top: 3px;
+  width: 180px;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+.form-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* -------  About ------- */
+
+.about-item {
+  display: flex;
+  flex-direction: column;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query ------- */
+
+@media all and (min-width: 480px) {
+  /* -------  General ------- */
+
+  /* -------  Header ------- */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px 10px 0px 10px;
+  }
+
+  header .logo {
+    font-size: 32px;
+  }
+
+  /* -------  Form ------- */
+  form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: center;
+  }
+
+  form label, form select, form input {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  form button {
+    font-size: 16px;
+  }
+
+  /* -------  About ------- */
+  .about-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-item p{
+    font-size: 12px;
+  }
+
+  /* -------  Ideas ------- */
+  .idea-item {
+    display: flex;
+  }
+
+  /* -------  Host ------- */
+  #host {
+    display: flex;
+    align-items: center;
+  }
+
+  #host h2{
+    font-size: 16px;
+  }
+
+  #host p, li{
+    font-size: 12px;
+  }
+}
